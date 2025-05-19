@@ -1,6 +1,7 @@
 describe('Google Search Tests', () => {
   it('types into the search bar and verifies the input value', () => {
-    cy.visit('https://duckduckgo.com');
+    cy.visit('https://duckduckgo.com', {setTimeout: 1500});
+    
     
     cy.get('#searchbox_input')
       .type('Cypress testing')
@@ -9,6 +10,6 @@ describe('Google Search Tests', () => {
       .type('{enter}');
 
     cy.url().should('include', '=Cypress+testing');
-    cy.get('#searchbox_input').should('exist').and('be.visible');
+    cy.get( '[data-testid="result"] ').should('exist').and('be.visible');
   });
 });
