@@ -1,3 +1,9 @@
+
+/**
+ * TEST CASE 1001:
+ * Using different Assertions in one test. with the use of "Should()" and "Get()"
+ */
+
 describe('Google Search Tests', () => {
   it('types into the search bar and verifies the input value', () => {
     cy.visit('https://duckduckgo.com', {setTimeout: 1500});
