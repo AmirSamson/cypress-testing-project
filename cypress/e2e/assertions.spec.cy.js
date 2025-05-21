@@ -1,3 +1,8 @@
+/**
+ * TEST CASE 1003:
+ * Using Assertions in one test. 
+ */
+
 describe('using assertions', () => {
 
     it('should check the title of the page', () => {
