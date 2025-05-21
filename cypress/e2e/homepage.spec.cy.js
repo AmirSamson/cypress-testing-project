@@ -1,3 +1,8 @@
+/**
+ * TEST CASE 1002:
+ * Using simple cy.get() and cy.visit() for navigating to URL. 
+ */
+
 describe('Homepage testing', () => {
     it('should check the title of the page', () => {
         cy.visit('https://google.com');
